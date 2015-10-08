@@ -1,0 +1,27 @@
+<div class="issue-list">
+  <% issues.each do |issue| %>
+    <article class="issue clearfix">
+
+      <div class="avatar">
+        <%= link_to "#" do %>
+          <%= image_tag issue.user.avatar %>
+        <% end %>
+      </div>
+
+      <div class="body">
+        <h5 class="title">
+          <%= link_to issue.title, issue_path(issue) %>
+        </h5>
+        <a class="read-more" href="#">read</a>
+        <span class="meta-data">
+          <%= link_to issue.user.name, '#' %>
+          <%= time_ago_in_words(issue.created_at) %> ago
+        </span>
+      </div>
+      <div class="issue-comment-count">
+      <i class = "fa fa-comments icon-muted"></i>
+        <%= link_to issue.comments.count, issue %>
+      </div>
+    </article>
+  <% end %>
+</div>

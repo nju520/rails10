@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>meetup</title>
+
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+</head>
+<body class = "<%= params[:controller] + '-' + params[:action] %>">
+		<div  class = "navbar clearfix">
+			<div class="container">
+				<a  class = "navbar-brand" href="/">
+					MeetUp
+				</a>
+				<ul class = "nav left">
+					<li><%= link_to "About", '/about'  %></li>
+					<li><a href="#">placeholder</a></li>
+				</ul>
+				<ul class = "nav right">
+					<% if current_user %>
+  					<li><%= link_to current_user.name, "#" %></li>
+  					<li><%= link_to "logout", logout_path, method: :delete %></li>
+					<% else %>
+  					<li><%= link_to "login", login_path %></li>
+  					<li><%= link_to "signup", signup_path %></li>
+					<% end %>
+				</ul>
+			</div>
+		</div>
+		<% if flash.notice %>
+			<div class = "notice">
+				<%= flash.notice %>
+			<% end %>
+			</div>
+		<%= yield %>
+		
+		<div class = "footer">
+			<div class = "container">
+				footer
+			</div>
+		</div>
+
+		<script>
+		$('.home-banner').anystretch(); 
+		//$('.home-banner').anystretch();
+    var hideNotice = function(){
+      $(".notice").fadeOut("slow");
+    }
+    setTimeout(hideNotice, 4000);
+		</script>	
+</body>
+</html>

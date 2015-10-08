@@ -1,0 +1,153 @@
+
+/* common use css*/
+body {
+	font-family: sans-serif;
+	margin: 0;
+	font-size: 14px;
+	color: #666;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+}
+
+
+/*超链接下划线不能忍，在这个文件添加css,会应用于所有网页*/
+a {
+	text-decoration: none;
+	color: #c0865e;
+}
+
+a:hover {
+	color: #845534;
+}
+
+/* footer css */
+
+.footer {
+	border-top: 1px solid #c5c5c5;
+	min-height: 200px;
+	margin: 3em 0;
+	padding-top: 3em;
+	background: #f8f5f0;
+
+}
+
+.btn-primary {
+  color: white;
+  background: #c0865e;
+  border-color: #b9784c;
+  &:hover {
+    background-color: #b9784c;
+    border-color: #845534;
+  }
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+// form.css
+form {
+  input {
+    font-size: 21px;
+    width: 100%;
+    padding: 10px 12px;
+    color: #555;
+  }
+
+  * {
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  textarea {
+    height: 180px;
+    font-size: 21px;
+    width: 100%;
+    padding: 10px 12px;
+    color: #555;
+  }
+  label {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  dd {
+    margin: 0;
+  }
+}
+
+.error {
+  margin: 5px 0 9px 0;
+  color: #DB8A14;
+}
+
+
+.notice {
+  position: absolute;
+  z-index: 1000;
+  bottom: 20px;
+  right: 20px;
+  background: teal;
+  color: white;
+  padding: 20px;
+  -webkit-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.68);
+  -moz-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.68);
+  box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.68);
+}
+
+
+
+
+
+
+
+
+
+

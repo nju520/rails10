@@ -1,0 +1,57 @@
+
+/* header */
+.navbar {
+	background: #222;
+	position: relative;
+	z-index: 1000;
+  a{
+  	color: #fff;
+  }
+}
+
+.navbar a:hover {
+	color: #c0865e;
+}
+
+.navbar-brand {
+	float: left;
+	padding-left: 0;
+	line-height: 80px;
+	font-size: 40px;
+}
+
+.nav.left {
+	float: left;
+	margin-left: 40px;
+	font-size: 15px;
+}
+
+.nav.right {
+	float: right;
+}
+
+.nav li {
+	float: left;
+}
+
+.nav li a {
+	display: block;
+	font-size: 1.1em;
+	line-height: 40px;
+	padding: 5px 10px;
+	margin: 15px 10px;
+}
+
+
+/*a:hover: 用于鼠标指针浮动在其上的元素，设置样式*/
+.nav li a:hover {
+	color: #000;
+	background: #fff;
+}
+
+/* 图片的class， 调整margin-top: -80px; 这样导航栏就能看到啦*/
+.home-banner {
+	height: 600px;
+	margin-top: -80px;
+
+}
