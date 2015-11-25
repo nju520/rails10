@@ -6,7 +6,7 @@
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  
+
 </head>
 <body class = "<%= params[:controller] + '-' + params[:action] %>">
 		<div  class = "navbar clearfix">
@@ -35,7 +35,7 @@
 			<% end %>
 			</div>
 		<%= yield %>
-		
+
 		<div class = "footer">
 			<div class = "container">
 				footer
@@ -43,12 +43,12 @@
 		</div>
 
 		<script>
-		$('.home-banner').anystretch(); 
+		$('.home-banner').anystretch();
 		//$('.home-banner').anystretch();
     var hideNotice = function(){
       $(".notice").fadeOut("slow");
     }
     setTimeout(hideNotice, 4000);
-		</script>	
+		</script>
 </body>
 </html>

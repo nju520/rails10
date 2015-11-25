@@ -32,11 +32,11 @@ Rails.application.routes.draw do
   get 'issues/:id/edit' => 'issues#edit', as: 'edit_issue'  #######
   patch 'issues/:id' => 'issues#update'
 
-  #comments  
+  #comments
   # 将issue_id 作为参数传递给controller
   # <%= form_tag("/issues/#{issue.id}/comments", method: :post) do  %>
   #post 'issues/:issue_id/comments' => 'comments#create'
-  # undefined method `comments_path' 
+  # undefined method `comments_path'
   resources :comments, only: [:create]   # == post '/comments' => 'comments#create'
 
   # Example of regular route:

@@ -1,6 +1,7 @@
 source 'https://ruby.taobao.org'
 
 gem 'pry-rails'
+gem 'awesome_print', :require => false
 # add font
 gem 'font-awesome-rails'
 # 实现敲下@ 符号，就会自动补齐要@ 的人
