@@ -13,7 +13,6 @@
 /tmp
 
 #Ignore other unneeded files
-database.yml
 doc/
 *.swp
 *~
@@ -21,3 +20,4 @@ doc/
 .DS_Store
 .idea
 .secret
+npm-debug.log
